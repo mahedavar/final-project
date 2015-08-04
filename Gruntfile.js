@@ -198,7 +198,8 @@ module.exports = function (grunt) {
                         'images/**',
                         'styles/fonts/**',
                         'fonts/**',
-                        'README.md'
+                        'README.md',
+                        '**/*.html'
                     ]
                 },{
                   expand: true,
@@ -231,7 +232,7 @@ module.exports = function (grunt) {
           },
           pages: {
             options: {
-              remote: 'https://github.com/mahedavar/final-project',
+              remote: 'https://github.com/mahedavar/final-project.git',
               branch: 'gh-pages'
             }
           },
