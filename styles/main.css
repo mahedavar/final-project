@@ -1,0 +1,395 @@
+/*****************************************************************************
+  final-project
+******************************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Chelsea+Market);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  ovweflow: hidden;
+  font-family: 'Chelsea Market', cursive;
+  font-size: 18px;
+  color: #111; }
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+main {
+  padding-top: 50px;
+  height: 100%; }
+
+section {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto !important;
+  min-height: 100%; }
+  section::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+textarea {
+  resize: none; }
+
+.content-wrapper {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: 15%; }
+
+.site-header {
+  padding: 0em 0em;
+  margin: 0em;
+  position: fixed;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: #2E3034;
+  z-index: 100; }
+  .site-header:last-child {
+    margin-right: 0; }
+
+.site-menu {
+  margin: 0em;
+  padding: 0em;
+  font-size: 1.1em;
+  line-height: 1.1em; }
+
+.site-title {
+  font-size: 1.3em;
+  line-height: 1.1em;
+  text-align: center;
+  margin: 0em;
+  padding: 0.5em;
+  color: #ffffff; }
+
+.nav-menu > li {
+  padding: 0.5em 0em; }
+
+.nav-menu > li a:hover {
+  border-bottom: 2px solid #A84E4E; }
+
+.nav-menu > li > a {
+  display: block;
+  font-size: 0.7em;
+  padding: 0.5em 1em;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none; }
+
+.list-unstyled {
+  margin: 0;
+  padding: 0; }
+
+.list-unstyled > li {
+  list-style-type: none; }
+
+.section-title {
+  text-align: center;
+  margin: 0em;
+  padding: 1em;
+  font-size: 2em;
+  color: #ffffff; }
+
+.section-about, .section-contact {
+  background-color: #9BB5D8; }
+
+.section-experience {
+  background-color: #A9B3BE; }
+
+.section-about img {
+  border-radius: 50%;
+  padding: 1.5em; }
+
+.about-text-wrap {
+  padding: 1.5em;
+  font-size: 1.2em;
+  color: #000000; }
+  .about-text-wrap p {
+    text-align: center; }
+
+.experience-top {
+  display: block; }
+
+.experience {
+  border: 1px solid #ffffff;
+  height: 100px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  transition: all 0.5s ease-in-out;
+  background-color: #9BB5D8;
+  color: #000000; }
+  .experience p {
+    text-align: center; }
+  .experience.descripion {
+    font-size: 0em; }
+
+.site-footer {
+  background-color: #2E3034;
+  margin: auto;
+  text-align: center;
+  height: 40px;
+  line-height: 2.2em;
+  font-size: 0.85em;
+  color: #ffffff; }
+  .site-footer p {
+    margin: 0em; }
+
+.social {
+  max-width: 130px;
+  padding-bottom: 5px; }
+
+.social img {
+  width: 100%; }
+
+.contact-form {
+  padding-bottom: 5px; }
+
+.button {
+  border-radius: 5px;
+  border-style: none;
+  padding: 10px; }
+
+#field-name, #field-email, #field-message {
+  line-height: normal;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0; }
+
+#field-name, #field-email {
+  height: 40px; }
+
+#field-message {
+  height: 100px; }
+
+input:focus, textarea:focus {
+  outline: none !important;
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px #29585C; }
+
+.button:focus {
+  outline: none !important;
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px #29585C; }
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+@media screen and (min-width: 630px) {
+  .site-menu {
+    display: inline-block;
+    float: right;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .site-menu:last-child {
+      margin-right: 0; }
+
+  .site-title {
+    float: left;
+    display: inline-block;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    text-align: left; }
+    .site-title:last-child {
+      margin-right: 0; }
+
+  .nav-menu {
+    float: right; }
+
+  .nav-menu > li {
+    display: inline-block; }
+
+  .nav-menu > li > a {
+    text-align: left; }
+
+  .section-about img {
+    max-width: 350px;
+    min-width: 235px;
+    margin: auto;
+    display: block; }
+
+  .social {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .social:last-child {
+      margin-right: 0; }
+
+  .social img {
+    display: block; }
+
+  .contact-form {
+    display: inline-block;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+    float: right; }
+    .contact-form:last-child {
+      margin-right: 0; }
+
+  .experience {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .experience:last-child {
+      margin-right: 0; }
+    .experience p.description {
+      font-size: 0em; }
+    .experience.active {
+      z-index: 10;
+      position: absolute;
+      width: 100%;
+      background-color: #333333;
+      height: 250px;
+      color: white;
+      text-align: left; }
+      .experience.active p.description {
+        font-size: 1em; } }
+@media screen and (max-width: 629px) {
+  .site-menu {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    border-top: 1px solid black;
+    left: 200%;
+    height: 0px;
+    transition: all 0.25s ease-in-out;
+    position: relative; }
+    .site-menu:last-child {
+      margin-right: 0; }
+    .site-menu.active {
+      left: 0%;
+      height: 100%; }
+
+  .site-title {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+    padding-left: 1em;
+    display: inline-block;
+    margin-left: 0em;
+    margin-right: 0em;
+    text-align: left; }
+    .site-title:last-child {
+      margin-right: 0; }
+
+  .list-unstyled > li {
+    border-bottom: 1px solid white; }
+
+  #nav-toggle {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    float: right;
+    display: inline-block;
+    margin-top: 5px;
+    transition: all 0.25s ease-in-out; }
+    #nav-toggle:last-child {
+      margin-right: 0; }
+    #nav-toggle div {
+      cursor: pointer;
+      border-radius: 1px;
+      height: 6px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      width: 70px;
+      display: block;
+      background-color: white;
+      content: '';
+      padding: 5px;
+      margin: 3px; }
+      #nav-toggle div:last-child {
+        margin-right: 0; }
+    #nav-toggle.active div.div1 {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 5%;
+      position: absolute; }
+    #nav-toggle.active div.div2 {
+      background-color: transparent; }
+    #nav-toggle.active div.div3 {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: 5%;
+      position: absolute; }
+
+  .section-about img {
+    width: 80%;
+    margin: auto;
+    display: block; }
+
+  .social {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin: 0 auto;
+    float: center; }
+    .social:last-child {
+      margin-right: 0; }
+
+  .social img {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    display: inline-block; }
+    .social img:last-child {
+      margin-right: 0; }
+
+  .contact-form {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    display: block;
+    float: center; }
+    .contact-form:last-child {
+      margin-right: 0; }
+
+  .experience {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .experience:last-child {
+      margin-right: 0; }
+    .experience p.description {
+      font-size: 0em; }
+    .experience.active {
+      z-index: 10;
+      background-color: #333333;
+      height: 250px;
+      color: white;
+      text-align: left; }
+      .experience.active p.description {
+        font-size: 1em; } }
